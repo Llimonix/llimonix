@@ -4,9 +4,9 @@ API_TOKEN = '1000707049:AAF-8seTHMnjZxcL0504N3G0PP6tUdESES0'
 
 bot = telebot.TeleBot(API_TOKEN)
 
-itembtn1 = types.KeyboardButton('a')
-itembtn2 = types.KeyboardButton('v')
-itembtn3 = types.KeyboardButton('d')
+itembtn1 = bot.types.KeyboardButton('a')
+itembtn2 = bot.types.KeyboardButton('v')
+itembtn3 = bot.types.KeyboardButton('d')
 markup.add(itembtn1, itembtn2, itembtn3) 
 
 
