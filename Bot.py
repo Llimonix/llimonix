@@ -7,7 +7,7 @@ bot = telebot.TeleBot(API_TOKEN)
 itembtn1 = telebot.types.KeyboardButton('a')
 itembtn2 = telebot.types.KeyboardButton('v')
 itembtn3 = telebot.types.KeyboardButton('d')
-markup.add(itembtn1, itembtn2, itembtn3) 
+markup = telebot.markup.add(itembtn1, itembtn2, itembtn3) 
 
 
 # Handle '/start' and '/help'
