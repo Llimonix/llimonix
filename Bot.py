@@ -3,7 +3,7 @@ import telebot
 API_TOKEN = '1000707049:AAF-8seTHMnjZxcL0504N3G0PP6tUdESES0'
 
 bot = telebot.TeleBot(API_TOKEN)
-
+markup =telebot.types.ReplyKeyboardMarkup()
 itembtn1 = telebot.types.KeyboardButton('a')
 itembtn2 = telebot.types.KeyboardButton('v')
 itembtn3 = telebot.types.KeyboardButton('d')
