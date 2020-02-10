@@ -4,6 +4,11 @@ API_TOKEN = '1000707049:AAF-8seTHMnjZxcL0504N3G0PP6tUdESES0'
 
 bot = telebot.TeleBot(API_TOKEN)
 
+itembtn1 = types.KeyboardButton('a')
+itembtn2 = types.KeyboardButton('v')
+itembtn3 = types.KeyboardButton('d')
+markup.add(itembtn1, itembtn2, itembtn3) 
+
 
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
@@ -18,7 +23,7 @@ I am here to echo your kind words back to you. Just say anything nice and I'll s
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
     if message.text == "хуй":
-         bot.reply_to(message, "ты пидор") 
+         bot.reply_to(message, "ты пидор", reply_markup=markup) 
 
 
 bot.polling()
